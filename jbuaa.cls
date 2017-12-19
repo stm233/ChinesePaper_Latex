@@ -1,24 +1,4 @@
 
-
-
- 
-%     jbuaa.cls
-%     
-%     version 0.1  (2017年8月)
-%
-%     北航学报自然科学版LaTeX模板（非官方）
-%     LaTeX Template (unofficial) for Journal of Beijing University of Aeronautics and Astronautics
-%
-%     by Htallone
-%
-%     These macros may be freely transmitted, reproduced, or modified
-%     provided that this notice is left intact.
- 
- 
- % 参考了《控制理论与应用》提供的LATEX模板  http://jcta.alljournals.ac.cn/uploadfile/cta_cn/20170419/kzllyy%20template20170419-2.9.zip
- % BHOSC   BUAAthesis  https://github.com/BHOSC/BUAAthesis/
- % 北航学报 http://bhxb.buaa.edu.cn/UserFiles/File/%E5%8C%97%E8%88%AA%E5%AD%A6%E6%8A%A5%E6%A8%A1%E6%9D%BF17.1.16(1).doc
-
 %中文latax模版
 \NeedsTeXFormat{LaTeX2e}[2007/10/19]
 \ProvidesClass{jbuaa}
