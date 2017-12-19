@@ -13,3 +13,9 @@ Figs 文件夹下是正文中用到的图片文件
 
 %将\newcommand 和 \usepackage 全部写入 jbuaa。cls文件中方便管理
 %\citeBUAA{Anonymous:2017jp} 为引用格式（当你引用的时候自动设置序号和参考文献）
+
+
+%用于批注
+%\added{}
+%\deleted{}
+%\replaced{}{}
