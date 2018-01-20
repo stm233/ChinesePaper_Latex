@@ -16,7 +16,7 @@ The LaTeX template for Journal of BUAA]
 %  packages
 %    这部分声明需要用到的包
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{changes} %批注
+
 \usepackage{fancyhdr}
 \usepackage{amsmath,amsfonts,amssymb,graphicx}    % EPS 图片支持
 \usepackage{subfigure}   % 使用子图形
@@ -27,9 +27,12 @@ The LaTeX template for Journal of BUAA]
 \usepackage{abstract}    % 2栏文档，一栏摘要及关键字宏包
 \usepackage{amsthm}      % 使用定理
 \usepackage{booktabs}    % 使用表格
-\usepackage{caption}%并排图片
+\usepackage{ccaption} %老的库 要放在新caption前
+\RequirePackage{caption}%并排图片
 \usepackage{subfigure}%并排图片
-\usepackage{ulem}%标题左对齐
+\RequirePackage{ulem}%标题左对齐
+
+
 
 \usepackage{tabu}
 \usepackage{longtable}
@@ -42,11 +45,13 @@ The LaTeX template for Journal of BUAA]
 \usepackage{wasysym}
 \usepackage{pifont}
 \usepackage[sort]{cite}
-\usepackage{ccaption}
+
 \usepackage{float}
 \usepackage{calc}
 \usetikzlibrary{calc}
 \usepackage{environ}
+
+
 
 % \usepackage{bigstrut}
 %     \setlength\bigstrutjot{3pt}
@@ -316,43 +321,5 @@ The LaTeX template for Journal of BUAA]
 
 \makeatother   
 
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% % 首页页眉页脚定义
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \fancypagestyle{plain}{ \fancyhf{}\vspace{10pt}
-% %页眉左侧
 
-% \lhead{
-%   \vspace{0.6cm}\centering{
-%     {\CJKfamily{hei}\xiaowuhao 北\ 京\ 航\ 空\ 航\ 天\ 大\ 学\ 学\ 报}\\[-0.5ex]
-%     {{\xiaowuhao Journal of Beijing University of Aeronautics and Astronautics}}
-%   }
-% }
-% \chead{}
-% \rhead{}
-% \lfoot{}
-% \cfoot{}
-% \rfoot{}
-% \renewcommand{\headrule}{%
-%   \hrule height0.4pt width \headwidth \vskip1.0pt%上面线粗细
-%   \hrule height0.4pt width \headwidth \vskip-2pt}%下面线粗细（页眉分割线）
-% }
-
-
-% %\renewcommand{\footrulewidth}{0.4pt}
-% %\setlength{\hoffset}{0.1pt}
-% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% \pagestyle{fancy} 
-% \fancyhf{}
-% %\fancyhead[RE]{{\footnotesize 小型微型计算机系统}} 
-% \fancyhead[LO]{\thepage} %奇数页眉的右边                       
-
-% \fancyhead[CE]{{\footnotesize 沈天马：包含逆向物流的无人机路径规划}}%偶数页页眉的中间
-% \fancyhead[LE]{{\footnotesize ~~~第~x~期}}%偶数项页眉的左边 
-% \fancyhead[RE]{\thepage} %偶数页眉的右边  
-% % \fancyhead[LE,RO]{~~~\footnotesize\thepage ~~~}
-% % \fancyhead[LO]{{\footnotesize ~~~第~x~期}}
-% \lfoot{}
-% \cfoot{}
-% \rfoot{}
 
